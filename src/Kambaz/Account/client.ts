@@ -23,12 +23,11 @@ export const updateUser = async (user: any) => {
   return response.data;
 };
 
+
 export const findMyCourses = async () => {
-    const { data } = await axiosWithCredentials.get(`${USERS_API}/current/courses`);
-    // console.log(data);
-    
-    return data;
-  };
+  const { data } = await axiosWithCredentials.get(`${USERS_API}/current/courses`);
+  return data;
+};
   
 
 export const createCourse = async (course: any) => {
